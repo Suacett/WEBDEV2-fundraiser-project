@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Search Fundraisers</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <nav>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="search.html">Search Fundraisers</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <h1>Search Fundraisers</h1>
+        <form id="search-form">
+            <label>
+                Organizer:
+                <input type="text" id="organizer" name="organizer">
+            </label>
+            <label>
+                City:
+                <input type="text" id="city" name="city">
+            </label>
+            <label>
+                Category:
+                <select id="category" name="category">
+                    <option value="">Select Category</option>
+                </select>
+            </label>
+            <button type="submit">Search</button>
+            <button type="button" onclick="clearCheckboxes()">Clear</button>
+        </form>
+
+        <div id="search-results"></div>
+    </main>
+
+    <footer>
+        <p>&copy; 2024 Crowdfunding Platform</p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
