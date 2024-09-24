@@ -4,7 +4,7 @@
  * Retrieves data dynamically from the fundraisers api
  * generates html content to display each fundraisers details
  */
-function fetchActiveFundraisers() {
+function fetchActiveFundraisers() { //HI FARAHANA 
     // Make a get request to the fundraisers api 
     fetch('/api/fundraisers')
         .then(response => response.json()) // Parse the json response
